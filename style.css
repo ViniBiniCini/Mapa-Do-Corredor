@@ -1,0 +1,29 @@
+
+        #mapid {    flex: 1; }
+        
+        body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        }
+
+        #controls {
+        background: #222;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+
+        }
+
+        button{
+        background: #00b894;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        }
+        button:hover{
+        background: #019875;
+        }

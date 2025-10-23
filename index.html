@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa do Corredor</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="/manifest.json" />   
+</head>
+
+     <body>
+    <div id="mapid"></div>
+    <div id="controls">
+      <button id="startBtn" onclick="IniciarCorrida()">Iniciar</button>
+      <button id="stopBtn" onclick="PararCorrida()" style="display: none;">Parar</button>
+      <p id="info">Distância: 0 m | Velocidade: 0 km/h</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
