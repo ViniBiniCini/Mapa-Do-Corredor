@@ -126,7 +126,7 @@ if (navigator.geolocation) {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('sw.js')
     .then(() => console.log('Service Worker registrado!'))
     .catch((err) => console.log('Erro ao registrar SW:', err));
 }

@@ -1,7 +1,7 @@
 {
     "theme_color": "#d10000",
     "background_color": "#ffffff",
-      "start_url": "./index.html",
+      "start_url": "index.html",
     "icons": [
         {
             "purpose": "maskable",
