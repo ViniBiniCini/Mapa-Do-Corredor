@@ -1,13 +1,13 @@
 const urlsToCache = [
-  '/',                // página principal
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  'https://unpkg.com/leaflet/dist/leaflet.css',
-  'https://unpkg.com/leaflet/dist/leaflet.js'
+  //'/',                // página principal
+  //'/index.html',
+  //'/style.css',
+ // '/script.js',
+ // 'https://unpkg.com/leaflet/dist/leaflet.css',
+ // 'https://unpkg.com/leaflet/dist/leaflet.js'
 ];
 self.addEventListener('install', e => {
-  event.waitUntil(
+  e.waitUntil(
     caches.open('v1').then(cache => {
         return cache.addAll(urlsToCache);
     })
