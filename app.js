@@ -35,12 +35,14 @@ function PararCorrida() {
   alert("Corrida Finalizada!");
 }
 function onLocationUpdate(position) {
-   if (!iniciar) return;
+
+
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
   const accuracy = position.coords.accuracy;
   const latLng = [lat, lng];
-
+    if (!iniciar) return;
+  if (accuracy > 20) return;
   if(pathCoords.length >1){
 
   const ultimoponto = pathCoords[pathCoords.length -2];
